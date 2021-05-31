@@ -1,7 +1,7 @@
 {
   "name": "livecovidvaccinetracker",
   "version": "1.0.0",
-  "description": "Simple and quick script to check availability of COVID vaccines",
+  "description": "A very simple script to check real time availability of COVID vaccine by querying the offical COWIN server",
   "main": "launch.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
