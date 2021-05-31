@@ -11,47 +11,30 @@ It queries the COWIN servers every 5 seconds and displays on screen centers at w
 
 Simply change the variable values as per your need
 
-> District ID - District in which you are looking for vaccine. 
-<br>
-> Example: 363 is code for Pune(Maharashtra).
-<br>
-> District ID can be easily obtained from COWIN website 
-<br>
-> **const DISTRICT_ID = 363;**
+##### DISTRICT_ID
+- District in which you are looking for vaccine. 
+- District ID can be easily obtained from COWIN website
+- Example: 363 is code for Pune(Maharashtra).
+- **const DISTRICT_ID = 363;**
 
-<br>
+##### DATE
+- Date for which the system will check vaccine availability
+- Format = DD-MM-YYYY
+- **const DATE = '01-06-2021';**
 
-> Date - Date for which the system will check vaccine availability
-<br>
-> Format = DD-MM-YYYY
-<br>
-> **const DATE = '01-06-2021';**
+##### VACCINE
+- Vaccine type to look for
+- Valid values (any one): COVISHIELD or COVAXIN 
+- **const VACCINE = 'COVISHIELD';**
 
-<br>
+##### AGE
+- Age group for which to look for vaccines
+- Valid values (any one): 18 or 45
+- **const AGE = 18;**
 
-> VACCINE - Vaccine type to look for
-<br>
-> Valid values (any one): COVISHIELD or COVAXIN 
-<br>
-const VACCINE = 'COVISHIELD';
-
-<br>
-
-> AGE - Age group for which to look for vaccines
-<br>
->Valid values (any one): 18 or 45
-<br>
-> **const AGE = 18;**
-
-<br>
-
-> DOSE - For first dose value should be 1, for second 
-<br>
-> dose value should be 2 
-<br>
-> **const DOSE = 1;**
-
-<br>
+##### DOSE
+- For first dose value should be 1, for second dose value should be 2 
+- **const DOSE = 1;**
 
 # RUN
 
