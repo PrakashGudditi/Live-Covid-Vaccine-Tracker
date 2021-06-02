@@ -3,7 +3,7 @@ A very simple script to check real time availability of COVID vaccine by queryin
 
 It helped me book vaccination appointment.
 
-It queries the COWIN servers every 5 seconds and displays on screen centers at which vaccination slots are available.
+It queries the COWIN servers every 5 seconds and displays on screen the centers at which vaccination slots are available.
 
 <br>
 
