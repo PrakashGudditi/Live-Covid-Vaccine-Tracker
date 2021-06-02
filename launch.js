@@ -19,7 +19,7 @@ const VACCINE = 'COVISHIELD';
 
 //AGE - Age group for which to look for vaccines
 //Valid values (any one): 18 or 45
-const AGE = 18;
+const AGE = 45;
 
 //DOSE - For first dose value should be 1, for second dose value should be 2 
 const DOSE = 1;
@@ -37,6 +37,7 @@ function logSearchInfo() {
     console.log("Looking for: " + VACCINE);
     console.log("Date: " + DATE);
     console.log("DISTRICT ID: " + DISTRICT_ID);
+    console.log("Age group: " + AGE);
     console.log("Dose: " + (DOSE == 1 ? "First" : "Second"));
     console.log("--------------------------------------------");
     console.log("");
@@ -66,7 +67,7 @@ function searchVaccine(error, response, body) {
                     console.log('Address: ' + center['address']);
                     let sessionData = center['sessions'];
                     sessionData.forEach(session => {
-                        if (session['min_age_limit'] == 18 && session['vaccine'] == 'COVISHIELD' && session[DOSE_AVAILABILITY_KEY] > 0) {
+                        if (session['min_age_limit'] == AGE && session['vaccine'] == VACCINE && session[DOSE_AVAILABILITY_KEY] > 0) {
                             console.log("Available vaccine count: " + session[DOSE_AVAILABILITY_KEY]);
                         }
                     })
