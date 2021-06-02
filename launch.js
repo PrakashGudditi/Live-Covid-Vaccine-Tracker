@@ -11,7 +11,7 @@ const DISTRICT_ID = 363;
 
 //Date - Date for which the system will check vaccine availability
 //Format = DD-MM-YYYY
-const DATE = '01-06-2021';
+const DATE = '02-06-2021';
 
 //VACCINE - Vaccine type to look for
 //Valid values (any one): COVISHIELD or COVAXIN 
