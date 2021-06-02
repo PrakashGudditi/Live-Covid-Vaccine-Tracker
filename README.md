@@ -43,7 +43,9 @@ Simply change the variable values as per your need
 3. ***node launch.js*** to run the script
 4. Enjoy!
 
+## Known Issues
 
+You might get *"Authentication Error"* message some times. Just restart the script. It works!
 
 
 
